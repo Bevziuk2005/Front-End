@@ -1,0 +1,47 @@
+body {
+    background-color: rgb(155, 155, 202);
+}
+
+h1 {
+    margin-left: 35%;
+}
+
+.tasks {
+    color: rgb(255, 255, 255); 
+    text-decoration: none;
+    background-color: rgb(104, 104, 142);
+    margin: 10px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer; 
+    display: inline-block; 
+}
+
+.tasks:hover {
+    background-color: #61bbde;
+}
+
+.tasks a {
+    color: inherit; 
+    text-decoration: none; 
+    display: block; 
+}
+
+#task1, #task2, #task3, #task4, #task5{
+    color: rgb(255, 255, 255); 
+    text-decoration: none;
+    background-color: rgb(104, 104, 142);
+    margin: 10px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer; 
+    display: inline-block; 
+}
+
+#task1:hover, #task2:hover, #task3:hover, #task4:hover, #task5:hover {
+    background-color: #47dfad;
+}

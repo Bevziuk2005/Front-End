@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en, ua">
+<head>
+    <meta charset="UTF-8">
+    <title>Контактна інформація</title>
+    <meta name="description" content="Звяжіться з нами для співпраці">
+    <meta name="robots" content="noindex, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body  style="background-color: beige">
+    <header>
+        <nav style="background-color: bisque; display: flex; justify-content: space-between;  padding: 0.5rem;">
+            <a href="index.html" style="display: inline-block; margin-left: 5%;" >
+                <img src="logo.jpg" alt="Logo" style="height: 3rem;  max-height: 50px;">
+            </a>
+            <button style="background-color: aquamarine; font-size: 1rem; height: 3rem; max-height: 50px;"><a href="index.html">Головна</a></button>
+            <button style="background-color: aquamarine; font-size: 1rem; height: 3rem; max-height: 50px;"><a href="booklist.html">Оглянуті Книги</a></button>
+            <button style="background-color: aquamarine; font-size: 1rem; height: 3rem; max-height: 50px;"><a href="forme.html">Про мене</a></button>
+            <button style="background-color: aqua; margin-right: 5%; font-size: 1rem; height: 3rem; max-height: 50px;"><a href="contact.html">Контактна інформація</a></button>
+        </nav>
+    </header>
+    <main style="color: rgba(105, 105, 105, 0.7); margin-top: 10px; text-align: center;">
+        <h3>Тут розташована моя контактна інформацію, звертатися лише для співпраці чи реклами.</h3>
+    </main>
+    <section style="text-align: justify; margin: 30px 15% 3% 15%; max-width: 8000px; min-width: 300px;">
+        <p>
+            Маєте запитання, пропозиції або цікаві ідеї для співпраці? Ми завжди раді спілкуванню з нашими читачами, партнерами та однодумцями! <br>
+            Зв'яжіться з нами будь-яким зручним для вас способом. Якщо хочете поділитися своїми враженнями про рецепти, запропонувати нові теми для блогу <br>
+            або маєте ідеї щодо партнерства — пишіть нам. Ми цінуємо кожен відгук та завжди відкриті до обговорення проєктів. Ваша думка для нас важлива!
+        </p>
+
+        <p>Електронна пошта: <a href="mailto:nikitabevzuk124@gmail.com">nikitabevzuk124@gmail.com</a></p>
+
+        <p style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+            Наші соціальні мережі: 
+            <a href="https://www.instagram.com/olga_martynovska?igsh=NGZ1NDczcGZvN2ti" target="_blank" rel="noopener noreferrer">
+                <button style="padding: 5px 15px; font-size: 1rem; border: none; border-radius: 5px; background-color: khaki; color: black;">Instagram</button>
+            </a>
+            <a href="https://www.tiktok.com/@diddy?_t=8qcdLxZdPPy" target="_blank" rel="noopener noreferrer">
+                <button style="padding: 5px 15px; font-size: 1rem; border: none; border-radius: 5px; background-color: khaki; color: black;">TikTok</button>
+            </a>
+        </p>
+
+        <p>Телефон (за потреби): +3805362894027 (креативний директор Епіфаній)</p>
+
+        <p>Напишіть нам через форму зворотного зв’язку, і ми відповімо якнайшвидше!</p>
+
+        <form action="https://formspree.io/f/xanyyvlj" method="POST" style="background-color: khaki;">
+            <label for="subject">Тема:</label>
+            <input type="text" id="subject" name="subject" required><br><br>
+            
+            <label for="email">Зворотня пошта:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="how-to-address">Як до Вас звертатися:</label>
+            <input type="text" id="how-to-address" name="how-to-address" required><br><br>
+            
+            <label for="issue">Причина звернення:</label><br>
+            <input type="checkbox" id="comment" name="issue[]" value="коментар">
+            <label for="comment">Коментар</label><br>
+            <input type="checkbox" id="cooperation" name="issue[]" value="співпраця">
+            <label for="cooperation">Співпраця</label><br>
+            <input type="checkbox" id="advertising" name="issue[]" value="реклама">
+            <label for="advertising">Реклама</label><br>
+            <input type="checkbox" id="complaint" name="issue[]" value="скарга">
+            <label for="complaint">Скарга</label><br><br>
+        
+            <label for="request">Питання:</label><br>
+            <textarea id="request" name="request" rows="5" cols="30" required></textarea><br><br>
+            
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" name="phone"><br><br>
+            
+            <input type="submit" value="Відправити" style="background-color: cornsilk; margin-right: 10px; margin-left: 5vw">
+            <input type="reset" value="Очистити все" style="background-color: cornsilk;">
+        </form>
+        
+        
+
+    </section>  
+</body>
+</html>
