@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en, ua">
+<head>
+    <meta charset="UTF-8">
+    <title>Контактна інформація</title>
+    <meta name="description" content="Звяжіться з нами для співпраці">
+    <meta name="robots" content="noindex, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav >
+            <a href="index.html" id="nav_img" ><img src="logo.jpg" alt="Logo" class="nav_l"></a>
+            <button class="nav_c nav_color"><a href="index.html">Головна</a></button>
+            <button class="nav_c nav_color"><a href="booklist.html">Оглянуті Книги</a></button>
+            <button class="nav_c nav_color"><a href="forme.html">Про мене</a></button>
+            <button class="nav_c nav_color" id="light_dark">Тема</a></button>
+            <button class="nav_r now_color"><a href="contact.html">Контактна інформація</a></button>
+        </nav>
+    </header>
+
+    <main>
+        <h3>Тут розташована моя контактна інформацію, звертатися лише для співпраці чи реклами.</h3>
+    </main>
+
+    <section id="con_body">
+        <p>
+            Маєте запитання, пропозиції або цікаві ідеї для співпраці? Ми завжди раді спілкуванню з нашими читачами, партнерами та однодумцями! <br>
+            Зв'яжіться з нами будь-яким зручним для вас способом. Якщо хочете поділитися своїми враженнями про рецепти, запропонувати нові теми для блогу <br>
+            або маєте ідеї щодо партнерства — пишіть нам. Ми цінуємо кожен відгук та завжди відкриті до обговорення проєктів. Ваша думка для нас важлива!
+        </p>
+
+        <p>Електронна пошта: <a href="mailto:nikitabevzuk124@gmail.com">nikitabevzuk124@gmail.com</a></p>
+
+        <p class="soc">
+            Наші соціальні мережі: 
+            <a href="https://www.instagram.com/olga_martynovska?igsh=NGZ1NDczcGZvN2ti" target="_blank" rel="noopener noreferrer">
+                <button class="con_button_1">Instagram</button>
+            </a>
+            <a href="https://www.tiktok.com/@diddy?_t=8qcdLxZdPPy" target="_blank" rel="noopener noreferrer">
+                <button class="con_button_1">TikTok</button>
+            </a>
+        </p>
+
+        <p>Телефон (за потреби): +3805362894027 (креативний директор Епіфаній)</p>
+
+        <p>Напишіть нам через форму зворотного зв’язку, і ми відповімо якнайшвидше!</p>
+
+        <form action="https://formspree.io/f/xanyyvlj" method="POST" id="form">
+            <label for="subject">Тема:</label>
+            <input type="text" id="subject" name="subject" required><br><br>
+            
+            <label for="email">Зворотня пошта:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="how-to-address">Як до Вас звертатися:</label>
+            <input type="text" id="how-to-address" name="how-to-address" required><br><br>
+            
+            <label for="issue">Причина звернення:</label><br>
+            <input type="checkbox" id="comment" name="issue[]" value="коментар">
+            <label for="comment">Коментар</label><br>
+            <input type="checkbox" id="cooperation" name="issue[]" value="співпраця">
+            <label for="cooperation">Співпраця</label><br>
+            <input type="checkbox" id="advertising" name="issue[]" value="реклама">
+            <label for="advertising">Реклама</label><br>
+            <input type="checkbox" id="complaint" name="issue[]" value="скарга">
+            <label for="complaint">Скарга</label><br><br>
+        
+            <label for="request">Питання:</label><br>
+            <textarea id="request" name="request" rows="5" cols="30" required></textarea><br><br>
+            
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" name="phone"><br><br>
+            
+            <input type="submit" value="Відправити" class="con_button_2">
+            <input type="reset" value="Очистити все" class="con_button_3">
+        </form>
+        
+    </section>  
+</body>
+</html>

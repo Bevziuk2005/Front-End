@@ -1,0 +1,42 @@
+const gulp = require("gulp");
+const sass = require("gulp-sass")(require("sass"));
+const cleanCSS = require("gulp-clean-css");
+const concat = require("gulp-concat");
+const uglify = require("gulp-uglify");
+const browserSync = require("browser-sync").create();
+
+// Завдання для компіляції SCSS у CSS
+gulp.task("styles", function () {
+  return gulp
+    .src("src/scss/**/*.scss") // Всі SCSS-файли
+    .pipe(sass().on("error", sass.logError))
+    .pipe(cleanCSS()) // Мінімізація CSS
+    .pipe(gulp.dest("dist/css")) // Збереження в папку dist
+    .pipe(browserSync.stream());
+});
+
+// Завдання для зменшення JavaScript
+gulp.task("scripts", function () {
+  return gulp
+    .src("src/js/**/*.js")
+    .pipe(concat("main.js")) // Об'єднання всіх JS у один файл
+    .pipe(uglify()) // Мінімізація
+    .pipe(gulp.dest("dist/js"))
+    .pipe(browserSync.stream());
+});
+
+// Автоматичне оновлення сторінки
+gulp.task("serve", function () {
+  browserSync.init({
+    server: {
+      baseDir: "./",
+    },
+  });
+
+  gulp.watch("src/scss/**/*.scss", gulp.series("styles"));
+  gulp.watch("src/js/**/*.js", gulp.series("scripts"));
+  gulp.watch("*.html").on("change", browserSync.reload);
+});
+
+// Завдання за замовчуванням
+gulp.task("default", gulp.series("styles", "scripts", "serve"));
